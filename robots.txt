@@ -1,0 +1,31 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.luxurychauffeurservicedubai.com/sitemap.xml
+
+# Allow Google to index all pages
+User-agent: Googlebot
+Allow: /
+
+# Allow Bing to index all pages
+User-agent: Bingbot
+Allow: /
+
+# Disallow crawlers from indexing common spam pages
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.php$
+Disallow: /*?*
+Disallow: /*&*
+
+# Allow respectable crawlers to index
+User-agent: Googlebot
+Allow: /
+Allow: /?
+Allow: /?*&*
+
+# Crawl delay settings for respectful crawling
+User-agent: *
+Crawl-delay: 1
+Request-rate: 1/10s
